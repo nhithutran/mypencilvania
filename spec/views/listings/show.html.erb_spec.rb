@@ -8,8 +8,8 @@ RSpec.describe "listings/show", type: :view do
       condition: 2,
       price: 3,
       sold: false,
-      user: "",
-      categories: nil
+      user: nil,
+      category: nil
     ))
   end
 

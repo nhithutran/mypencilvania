@@ -5,7 +5,7 @@ FactoryBot.define do
     condition { 1 }
     price { 1 }
     sold { false }
-    user { "" }
-    categories { nil }
+    user { nil }
+    category { nil }
   end
 end

@@ -8,8 +8,8 @@ RSpec.describe "listings/edit", type: :view do
       condition: 1,
       price: 1,
       sold: false,
-      user: "",
-      categories: nil
+      user: nil,
+      category: nil
     ))
   end
 
@@ -28,9 +28,9 @@ RSpec.describe "listings/edit", type: :view do
 
       assert_select "input[name=?]", "listing[sold]"
 
-      assert_select "input[name=?]", "listing[user]"
+      assert_select "input[name=?]", "listing[user_id]"
 
-      assert_select "input[name=?]", "listing[categories_id]"
+      assert_select "input[name=?]", "listing[category_id]"
     end
   end
 end
